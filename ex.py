@@ -7,7 +7,7 @@ bot = telebot.TeleBot(TOKEN)
 # Обработка команды /start
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-    bot.reply_to(message, "Привет! Добро пожаловать!")
+    bot.reply_to(message, "Добро пожаловать!")
 
 # Запуск бота
 bot.polling()
